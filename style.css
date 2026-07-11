@@ -375,65 +375,74 @@ body {
 
 @media (max-width: 768px) {
     .contain {
-        width: 100% !important;
+        width: 90% !important;
         max-width: 400px !important;
-        height: 550px !important;
+        height: 600px !important; 
         display: flex !important;
         flex-direction: column !important;
-        overflow: hidden !important;
+        position: relative !important;
     }
 
     .contain .form-box {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
         width: 100% !important;
         height: 100% !important;
-        position: absolute !important;
-        padding: 40px 30px !important;
+        padding: 30px 25px !important; 
         background: #081b29 !important;
         box-sizing: border-box !important;
-        z-index: 5 !important; 
-        transition: transform 0.6s ease, opacity 0.6s ease !important;
+        transition: opacity 0.4s ease, transform 0.4s ease !important;
+        z-index: 10 !important;
+    }
+
+    .input-box {
+        width: 100% !important;
+        margin: 20px 0 !important; 
+    }
+
+    .contain h2 {
+        font-size: 28px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .contain .form-box.login {
+        transform: translateX(0) !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+    }
+
+    .contain .form-box.register {
+        transform: translateX(100%) !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+
+    .contain.active .form-box.login {
+        transform: translateX(-100%) !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+
+    .contain.active .form-box.register {
+        transform: translateX(0) !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
     }
 
     .contain .bg-animate,
     .contain .bg-animate2,
     .contain .toggle-box,
     .contain .info-content {
+        display: none !important;
         opacity: 0 !important;
         visibility: hidden !important;
         pointer-events: none !important;
-        display: none !important;
-    }
-
-   
-    .contain .form-box.login {
-        transform: translateX(0) !important;
-        opacity: 1 !important;
-    }
-
-    .contain .form-box.register {
-        transform: translateX(100%) !important; 
-        opacity: 0 !important;
-    }
-
-    .contain.active .form-box.login {
-        transform: translateX(-100%) !important; 
-        opacity: 0 !important;
-    }
-
-    .contain.active .form-box.register {
-        transform: translateX(0) !important; 
-        opacity: 1 !important;
-        left: 0 !important;
-    }
-    
-    .input-box, .input-box input {
-        width: 100% !important;
     }
     
     .btn {
         width: 100% !important;
-        position: relative !important;
-        z-index: 10 !important; 
+        margin-top: 10px !important;
         cursor: pointer !important;
     }
 }
