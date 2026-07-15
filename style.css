@@ -15,11 +15,16 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #0d0d0d;
-    background-image: url(img/arrangement-of-different-books-on-table-with-graduation-cap-on-black-chalkboard-background-ai-generate-photo.jpg);
+    background:linear-gradient(to left, #131313,rgba(0, 220, 255, 0.545));
+    background-image: url(img/photo_5960747736325885513_y.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: background-image 1.5s ease;
+}
+body:has(.contain.active) {
+    background-image: url('img/photo_5960747736325885518_y.jpg');
+    transition: background-image 1.5s ease; 
 }
 
 .contain {
