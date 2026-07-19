@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+
+
 body {
    
     background-color: #b696e500;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
 }
 
 
@@ -160,9 +161,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 25%;
+    width: calc(28% - 40px);;
     padding: 8px;
-    height: 47%;
+    min-height: 320px;
     margin: 20px;
     border-radius: 8px;
     border: 1px solid #80808054;
@@ -174,13 +175,17 @@ body {
 }
 
 .photo {
-    margin: 5px;
+    margin: 5px 0;
     width: 100%;
     height: 210px; 
+    border: 1px solid #80808054;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
+    border-radius: 5px;
+
 }
 
 .photo img {
-    width: 97%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
@@ -190,14 +195,45 @@ body {
     padding-left: 15px;
 }
 .user_dialoge p {
+  font-family: "sora", sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+}
+
+.user_dialoge p:hover {
     color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 21px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    text-decoration: none;
 }
 
 .dialoge {
+  font-family: "Inter", sans-serif;
+  cursor:text;
    padding: 0px 15px 15px;
-    color: white;
+    color: #333333bf;
     font-size: 15px;
     font-weight: 100;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin: 10px 0;
+}
+
+.social-btn {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -15px;
+    padding-left: 15px;
+}
+.social-btn img {
+    width: 30px; height: 30px; border-radius: 50%
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
