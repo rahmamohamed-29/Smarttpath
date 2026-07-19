@@ -3,7 +3,6 @@
 
 
 body {
-   
     background-color: #b696e500;
     margin: 0;
     padding: 0;
@@ -193,6 +192,18 @@ body {
 .user_dialoge {
     margin-top: 10px;
     padding-left: 15px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.rating {
+    font-family: "Inter", sans-serif;
+    color: #333333bf;
+    font-size: 11px;
+    font-weight: 700;
+    margin-left: 10px;
 }
 .user_dialoge p {
   font-family: "sora", sans-serif;
@@ -234,6 +245,6 @@ hr {
     padding-left: 15px;
 }
 .social-btn img {
-    width: 30px; height: 30px; border-radius: 50%
+    width: 30px; height: 30px; border-radius: 50%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
