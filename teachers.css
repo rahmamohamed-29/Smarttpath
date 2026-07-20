@@ -176,7 +176,7 @@ body {
 .photo {
     margin: 5px 0;
     width: 100%;
-    height: 210px; 
+    height: 450px; 
     border: 1px solid #80808054;
     /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
     border-radius: 5px;
@@ -247,4 +247,27 @@ hr {
 .social-btn img {
     width: 30px; height: 30px; border-radius: 50%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+social-btn i {
+    font-size: 22px;
+    margin-right: 12px;
+    transition: 0.3s;
+}
+
+.social-btn .fa-x-twitter {
+    color: #000; 
+}
+
+.social-btn .fa-linkedin {
+    color: #0A66C2; 
+}
+
+.social-btn i:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+.social-btn .fa-youtube {
+    color: #FF0000; 
 }
