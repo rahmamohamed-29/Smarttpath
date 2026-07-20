@@ -32,9 +32,9 @@ body:has(.contain.active) {
     width: 750px;
     height: 450px;
     background: transparent;
-    border: 2px solid #72bcfd;
+    border: 2px solid #e372fd;
     overflow: hidden; 
-    box-shadow: 0 0 25px  #72bcfd;
+    box-shadow: 0 0 25px  #d840fb;
     border-radius: 25px;
     background: #081b29 ; 
     z-index: 99;
@@ -171,7 +171,7 @@ body:has(.contain.active) {
 
 .input-box input:focus,
 .input-box input:valid {
-    border-bottom-color: #0ef;
+    border-bottom-color: rgb(166, 0, 255);
 }
 
 .input-box label {
@@ -188,7 +188,7 @@ body:has(.contain.active) {
 .input-box input:focus~label,
 .input-box input:valid~label {
     top: -5px;
-    color: #0ef;
+    color: rgb(166, 0, 255);
 }
 
 .input-box i {
@@ -203,7 +203,7 @@ body:has(.contain.active) {
 
 .input-box input:focus~i,
 .input-box input:valid~i {
-    color: #0ef;
+    color:rgb(166, 0, 255);
 }
 
 .btn {
@@ -211,7 +211,7 @@ body:has(.contain.active) {
     width: 100%;
     height: 45px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid rgb(166, 0, 255);
     outline: none;
     border-radius: 40px;
     cursor: pointer;
@@ -231,7 +231,7 @@ body:has(.contain.active) {
     left: 0;
     width: 100%;
     height: 300%;
-    background: linear-gradient(#081b29, #0ef, #081b29, #0ef);
+    background: linear-gradient(#2d0936, rgb(166, 0, 255), #2d0936, rgb(166, 0, 255));
     z-index: -1;
     transition: 0.7s;
 }
@@ -248,7 +248,7 @@ body:has(.contain.active) {
 }
 
 .link p a {
-    color: #0ef;
+    color: rgb(166, 0, 255);
     text-decoration: none;
     font-weight: 600;
     display: inline-block; 
@@ -256,7 +256,7 @@ body:has(.contain.active) {
 }
 
 .link p a:hover {
-    color: rgba(0, 255, 255, 0.612);
+    color: rgba(166, 0, 255, 0.612);
     transform: translateY(-3px);
 }
 
@@ -279,8 +279,8 @@ body:has(.contain.active) {
     right: 0;
     width: 850px;
     height: 600px;
-    background: linear-gradient(45deg, #081b29, #0ef);
-    border-bottom: 3px solid #0ef;
+    background: linear-gradient(45deg,#2d0936,rgb(166, 0, 255));
+    border-bottom: 3px solid rgb(166, 0, 255);
     transform: rotate(10deg) skewY(40deg);
    transition: 1.5s ease;
     transform-origin: bottom right;
@@ -297,8 +297,8 @@ body:has(.contain.active) {
     left: 250px;
     width: 850px;
     height: 700px;
-    background:  #081b29;
-    border-top: 3px solid #0ef;
+    background:  #2d0936;
+    border-top: 3px solid rgb(166, 0, 255);
     transition: 1.5s ease;
     transform: rotate(0) skewY(0);
     transform-origin: bottom left;
@@ -318,9 +318,9 @@ body:has(.contain.active) {
     position: fixed;
     top: 20px;
     right: 20px;
-    background: #081b29;
-    border: 2px solid #0ef;
-    box-shadow: 0 0 15px #0ef;
+    background: #2d0936;
+    border: 2px solid rgb(166, 0, 255);
+    box-shadow: 0 0 15px rgb(166, 0, 255);
     border-radius: 12px;
     padding: 15px 25px;
     z-index: 9999;
@@ -337,7 +337,7 @@ body:has(.contain.active) {
 
 .alert-content i {
     font-size: 40px;
-    color: #0ef;
+    color: rgb(166, 0, 255);
     margin-bottom: 8px;
     animation: pulse 1s infinite alternate;
 }
@@ -374,7 +374,7 @@ body:has(.contain.active) {
 
 @keyframes pulse {
     from { transform: scale(1); }
-    to { transform: scale(1.1); box-shadow: 0 0 10px rgba(0, 255, 255, 0.3); }
+    to { transform: scale(1.1); box-shadow: 0 0 10px rgba(162, 0, 255, 0.3); }
 }
 
 
